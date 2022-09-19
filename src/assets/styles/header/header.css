@@ -21,7 +21,17 @@ h1{
     color: white;
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
-    @media () {
-        
+}
+
+.header{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 400px){
+    .header{
+        flex-direction: column;
     }
 }

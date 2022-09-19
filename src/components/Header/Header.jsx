@@ -3,16 +3,24 @@ import '../../assets/styles/header/header.css'
 import apple from "../../assets/images/apple.png"
 
 
-const Header = () =>{
+const Header = () => {
 
-    return(
+    return (
         <header>
+            <div className="header">
                 <div>
-                    <h1>MARCELO <img src={apple} />IPHONES</h1> 
+                    <h1>MARCELO</h1>
                 </div>
+                <div className="apple">
+                    <img src={apple} />
+                </div>
+                <div>
+                    <h1>IPHONES</h1>
+                </div>
+            </div>
         </header>
     )
-        
+
 
 }
 
