@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100vw;
+    height: 100vw;
+}
+
+.alinhamento{
+    width: 80%;
+    height: 100%;
+}
+
+.produto{
+    color: black;
+}
