@@ -23,7 +23,7 @@ h1{
     font-family: 'Roboto', sans-serif;
 }
 
-.header{
+.logo{
     display: flex;
     margin: auto;
     justify-content: center;
@@ -31,7 +31,12 @@ h1{
 }
 
 @media (max-width: 400px){
-    .header{
+    header{
+        height: 200px;
+    }
+
+    .logo{
         flex-direction: column;
+        margin-top: 80px;
     }
 }
