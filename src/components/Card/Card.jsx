@@ -25,7 +25,7 @@ export default function MultiActionAreaCard(props) {
         <CardActionArea >
           <CardMedia
             component="img"
-            height="240"
+            height="350"
             image={props.obj.foto}
             alt="Produto"
           />
@@ -40,17 +40,21 @@ export default function MultiActionAreaCard(props) {
             <br/>
             <p>armazenamento:</p>
             <ul>
-                <li>{props.obj.armazenamento.am1}</li>
-                <li>{props.obj.armazenamento.am2}</li>
-                <li>{props.obj.armazenamento.am3}</li>
-                <li>{props.obj.armazenamento.am4}</li>
+                <p>{props.obj.armazenamento.am1}</p>
+                <p>{props.obj.armazenamento.am2}</p>
+                <p>{props.obj.armazenamento.am3}</p>
+                <p>{props.obj.armazenamento.am4}</p>
             </ul>  
+            <br/>
             <p>cores:</p>
             <div className='grid_card'>
                 <p>{props.obj.cor.cor1}</p>
                 <p>{props.obj.cor.cor2}</p>
                 <p>{props.obj.cor.cor3}</p>
                 <p>{props.obj.cor.cor4}</p>
+                <p>{props.obj.cor.cor5}</p>
+                <p>{props.obj.cor.cor6}</p>
+                <p>{props.obj.cor.cor7}</p>
             </div>  
             </Typography>
           </CardContent>
