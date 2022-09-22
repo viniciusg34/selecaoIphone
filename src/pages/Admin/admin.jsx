@@ -14,25 +14,35 @@ const Admin = () => {
     return(
         <>
             <Header></Header>
-            <div className='main'>
-                <section className='alinhamento'>
+            <div className='admin'>
+                <section className='alinhamentoAdmin'>
                     <div className='cardPrincipal'>
-                        <div className='headerCard'></div>
+                        <div className='bodyCardPrincipal'>
+                            <div className='divPadrao'>
+                                <h2>Nome do produto:</h2>
+                                <input type="text" className='inputPadraoAdmin' id='inputNomeProdutoAdmin' />
+                            </div>
+                            <div>
+                                <div>
+                                    <h2>Cor:</h2>
+                                    <input type="text" className='inputPadraoAdmin' />
+                                    <h2>Armazenamento</h2>
+                                    <input type="text" className='inputPadraoAdmin' />
+                                </div>
+                                <div>
+                                    <h2>Garantia</h2>
+                                    <input type="text" className='inputPadraoAdmin' />
+                                    <h2>Preço</h2>
+                                    <input type="text" className='inputPadraoAdmin' />
+                                </div>
+                                </div>
+                            <div>
+                                <h2>Descrição</h2>
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
                         <div className='alinhamentoImagem'>
                             <img src={ilustrativa} alt="Imagem do celular" />
-                        </div>
-                        <div className='bodyCardPrincipal'>
-                            <h1 className='produto'>Iphone 8 plus</h1>
-                            <h2>Cor:</h2>
-                            <input type="text" />
-                            <h2>Armazenamento</h2>
-                            <input type="text" />
-                            <h2>Garantia</h2>
-                            <input type="text" />
-                            <h2>Preço</h2>
-                            <input type="text" />
-                            <h3>Descrição</h3>
-                            <input type="text" />
                         </div>
                     </div>
                 </section>
