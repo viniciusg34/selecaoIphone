@@ -20,7 +20,7 @@ const Admin = () => {
                         <div className='bodyCardPrincipal'>
                             <div className='divPadrao'>
                                 <h2>Nome do produto:</h2>
-                                <input type="text" className='inputPadraoAdmin' />
+                                <input type="text" className='inputPadraoAdmin' id='inputNomeProdutoAdmin' />
                             </div>
                             <div>
                                 <div>
