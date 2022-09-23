@@ -5,6 +5,7 @@ import { apiLol } from '../../services/api'
 
 // CSS
 import '../../assets/styles/admin/admin.css'
+import { TextField } from '@mui/material';
 
 // Imagens
 import ilustrativa from '../../assets/images/ilustrativa2.png';
@@ -18,31 +19,36 @@ const Admin = () => {
                 <section className='alinhamentoAdmin'>
                     <div className='cardPrincipal'>
                         <div className='bodyCardPrincipal'>
-                            <div className='divPadrao'>
-                                <h2>Nome do produto:</h2>
-                                <input type="text" className='inputPadraoAdmin' id='inputNomeProdutoAdmin' />
+                            <div className='separadorBodyAdm'>
+                                <div className='divPadraoAdmin'>
+                                    <TextField sx={{width:1000}} id="filled-basic" label="Nome do produto:" variant="filled" />
+                                </div>
+                                <div className='divPadraoAdmin'>
+                                        <TextField sx={{width:1000}} id="filled-basic" label="Cor" variant="filled" />
+                                </div>
+                                <div className='divPadraoAdmin'>
+                                        <TextField sx={{width:1000}} id="filled-basic" label="Armazenamento" variant="filled" />
+                                </div>
+                                <div className='divPadraoAdmin'>
+                                        <TextField sx={{width:1000}} id="filled-basic" label="Garantia" variant="filled" />
+                                </div>
+                                <div className='divPadraoAdmin'>
+                                        <TextField sx={{width:1000}} id="filled-basic" label="Preço" variant="filled" />
+                                </div>
+                                <div className='divPadraoAdmin'>
+                                    <TextField sx={{width:1000}} id="filled-basic" label="Imagem" variant="filled" />
+                                </div>
+                                <div className='divPadraoAdmin'>
+                                    <TextField
+                                        id="filled-multiline-static"
+                                        label="Descrição"
+                                        multiline
+                                        rows={4}
+                                        variant="filled"
+                                        sx={{width:1000}}
+                                    />
+                                </div>
                             </div>
-                            <div>
-                                <div>
-                                    <h2>Cor:</h2>
-                                    <input type="text" className='inputPadraoAdmin' />
-                                    <h2>Armazenamento</h2>
-                                    <input type="text" className='inputPadraoAdmin' />
-                                </div>
-                                <div>
-                                    <h2>Garantia</h2>
-                                    <input type="text" className='inputPadraoAdmin' />
-                                    <h2>Preço</h2>
-                                    <input type="text" className='inputPadraoAdmin' />
-                                </div>
-                                </div>
-                            <div>
-                                <h2>Descrição</h2>
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
-                            </div>
-                        </div>
-                        <div className='alinhamentoImagem'>
-                            <img src={ilustrativa} alt="Imagem do celular" />
                         </div>
                     </div>
                 </section>
