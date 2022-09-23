@@ -6,17 +6,33 @@ import { apiLol } from '../../services/api'
 // CSS
 import '../../assets/styles/admin/admin.css'
 import { TextField } from '@mui/material';
+import Swal from 'sweetalert2/dist/sweetalert2.js'
 
 // Imagens
 import ilustrativa from '../../assets/images/ilustrativa2.png';
 
+
 const Admin = () => {
+
+    // Salvar
+    const [produto, setProduto] = useState('');
+    const [cor, setCor] = useState('');
+    const [armazenamento, setArmazenamento] = useState('');
+    const [garantia, setGarantia] = useState('');
+    const [preco, setPreco] = useState('');
+    const [foto, setFoto] = useState('');
+
+    const Salvar = () => {
+        if (produto !== '' && cor !== '' && armazenamento !== '' && garantia !== '' && preco !== '' && foto !== '') {
+           
+        }
+   }
 
     return(
         <>
             <Header></Header>
             <div className='admin'>
-                <section className='alinhamentoAdmin'>
+                <form className='alinhamentoAdmin'>
                     <div className='cardPrincipal'>
                         <div className='bodyCardPrincipal'>
                             <div className='separadorBodyAdm'>
@@ -24,16 +40,16 @@ const Admin = () => {
                                     <TextField sx={{width:1000}} id="filled-basic" label="Nome do produto:" variant="filled" />
                                 </div>
                                 <div className='divPadraoAdmin'>
-                                        <TextField sx={{width:1000}} id="filled-basic" label="Cor" variant="filled" />
+                                    <TextField sx={{width:1000}} id="filled-basic" label="Cor" variant="filled" />
                                 </div>
                                 <div className='divPadraoAdmin'>
-                                        <TextField sx={{width:1000}} id="filled-basic" label="Armazenamento" variant="filled" />
+                                    <TextField sx={{width:1000}} id="filled-basic" label="Armazenamento" variant="filled" />
                                 </div>
                                 <div className='divPadraoAdmin'>
-                                        <TextField sx={{width:1000}} id="filled-basic" label="Garantia" variant="filled" />
+                                    <TextField sx={{width:1000}} id="filled-basic" label="Garantia" variant="filled" />
                                 </div>
                                 <div className='divPadraoAdmin'>
-                                        <TextField sx={{width:1000}} id="filled-basic" label="Preço" variant="filled" />
+                                    <TextField sx={{width:1000}} id="filled-basic" label="Preço" variant="filled" />
                                 </div>
                                 <div className='divPadraoAdmin'>
                                     <TextField sx={{width:1000}} id="filled-basic" label="Imagem" variant="filled" />
@@ -51,7 +67,8 @@ const Admin = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                    <button className='newCell' onClick={Salvar}>Enviar</button>
+                </form>
             </div>
         </>
     )
