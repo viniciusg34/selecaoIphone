@@ -1,7 +1,6 @@
 // Funcionalidades
 import Header from '../../components/Header/Header'
 import React, { useEffect, useState} from 'react';
-import { apiLol } from '../../services/api'
 
 // CSS
 import '../../assets/styles/admin/admin.css'
