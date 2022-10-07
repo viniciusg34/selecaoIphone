@@ -18,7 +18,7 @@ import	"../../assets/styles/cards/cards.css"
 export default function MultiActionAreaCard(props) {
 
     function redirectTime(){
-        window.location = "https://wa.me/21983589756"
+      window.location = "https://wa.me/5521983589756"
     }
     return (
       <Card sx={{ maxWidth: 400 }}>

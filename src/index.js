@@ -9,7 +9,7 @@ import "./index.css";
 
 // pages
 import Telefones from "./pages/Telefones/Telefones";
-import Admin from "./pages/Admin/Admin";
+import Admin from "./pages/Admin/admin";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
